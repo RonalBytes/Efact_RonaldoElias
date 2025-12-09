@@ -16,4 +16,4 @@ ng serve
 
 Una vez que el servidor esté corriendo, abre tu navegador y navega a http://localhost:4200/. La aplicación se recargará automáticamente cada vez que modifiques alguno de los archivos fuente.
 
-🥇 CAPTURAS DEL PROYECTO 🥇 <a name="-demo--"></a>
+## 🥇 CAPTURAS DEL PROYECTO 🥇 <a name="-demo--"></a>
