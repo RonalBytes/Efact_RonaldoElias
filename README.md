@@ -1,5 +1,5 @@
 # EfactRonaldo
-<h1> Aplicación Web de Facturación Electrónica </h1>
+<h1> Aplicación Web de Facturación Electrónica Efact </h1>
 ## :point_right: Descripción del proyecto <a name="point_right-descripción-del-proyecto-"></a>
 Efact es una aplicación web para la gestión de facturas electrónicas que permite a los usuarios crear, ver y administrar sus documentos de manera rápida y segura.
 
