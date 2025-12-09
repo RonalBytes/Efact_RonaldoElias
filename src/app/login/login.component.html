@@ -1,0 +1,41 @@
+<!-- Efecto de nieve -->
+<div class="snow-container"></div>
+
+<div class="login-page">
+  <!-- Izquierda -->
+  <div class="left-panel">
+    <h1>Bienvenido EFact</h1>
+    <p>Prueba técnica</p>
+  </div>
+
+  <!-- Derecha -->
+  <div class="right-panel">
+    <div class="login-card">
+      <h2>Iniciar Sesión</h2>
+      <form (ngSubmit)="onSubmit()">
+        <label>
+          Usuario
+          <input type="text" [(ngModel)]="username" name="username" placeholder="Tu usuario" />
+        </label>
+        <label>
+          Contraseña
+          <input type="password" [(ngModel)]="password" name="password" placeholder="Tu contraseña" />
+        </label>
+
+        <div class="actions">
+          <button type="submit" [disabled]="loading">Ingresar</button>
+          <button type="button" (click)="username=''; password=''">Limpiar</button>
+        </div>
+
+        <div *ngIf="loading" class="info">Autenticando...</div>
+        <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+
+        <div class="hint">
+          <strong>Credenciales demo:</strong><br />
+          Usuario: <code>{{ username }}</code><br />
+          Contraseña: <code>proporcionada</code>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

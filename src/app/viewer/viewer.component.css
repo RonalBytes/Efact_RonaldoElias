@@ -1,0 +1,198 @@
+/* Reset general */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+/* Header */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  margin-left: -510px;
+  margin-right: -20px;
+  width: 213%;
+  box-sizing: border-box;
+  background-color: #2c3e50;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.logo span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-menu a {
+  margin-left: 32px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+  color: #2980b9;
+}
+
+/* Contenedor principal */
+.inicio-page {
+  width: 100%;
+  background-color: #f5f6fa;
+  box-sizing: border-box;
+}
+
+/* Card central */
+.inicio-card {
+  width: 110%; /* agrandar el marco */
+  margin: 40px auto 0 auto; /* 40px de margen superior, centrado horizontalmente */
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+/* HEADER ROW: IZQUIERDA + CENTRO + DERECHA */
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+/* BOTONES GRANDES A LA IZQUIERDA */
+.left-buttons {
+  display: flex;
+  gap: 0;
+}
+
+
+.big-left-btn {
+  padding: 15px 30px;
+  border-radius: 0px;
+  background-color: #e1e3e6;
+  color: rgb(110, 109, 109);
+  font-weight: bold;
+  border: 1px solid #7aebf3;
+  cursor: pointer;
+  transition: 0.5s;
+  white-space: nowrap;
+}
+
+.big-left-btn:hover {
+  background-color: #2399dd;
+}
+
+/* Título */
+h2 {
+  color: #2c3e50;
+  letter-spacing: -1px;
+  font-weight: 600;
+  margin: 0;
+  padding: 15px 30px;
+  
+}
+
+/* Botones pequeños a la derecha */
+.viewer-actions {
+  display: flex;
+  gap: 10px;
+  background: #eef2f5;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.small-btn {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid #2c3e50;
+  background-color: #052e49;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.small-btn:hover {
+  background-color: #1f618d;
+}
+
+/* XML */
+.xml-content {
+  text-align: left;
+  background-color: #f0f0f0;
+  padding: 16px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+/* PDF */
+.pdf-container {
+  margin-top: 30px;
+  border: 1px solid #bdc3c7;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Info estados */
+.info {
+  margin-top: 16px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* Botones pequeños a la derecha */
+.small-btn {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid #2c3e50;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Colores por tipo */
+.small-btn.xml-btn {
+  background-color: #28a745; /* verde */
+  border-color: #1e7e34;
+}
+.small-btn.xml-btn:hover {
+  background-color: #218838;
+}
+
+.small-btn.pdf-btn {
+  background-color: #dc3545; /* rojo */
+  border-color: #b02a37;
+}
+.small-btn.pdf-btn:hover {
+  background-color: #c82333;
+}
+
+.small-btn.cdr-btn {
+  background-color: #007bff; /* azul */
+  border-color: #0056b3;
+}
+.small-btn.cdr-btn:hover {
+  background-color: #0069d9;
+}

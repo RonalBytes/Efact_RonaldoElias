@@ -1,0 +1,153 @@
+/* Reset y fuente */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Contenedor principal */
+.login-page {
+  display: flex;
+  height: 100vh;      /* altura completa de la ventana */
+  width: 100vw;       /* ancho completo de la ventana */
+  overflow: hidden;
+  transform: translate(-27%, -6%);
+  
+}
+
+/* Panel izquierdo */
+.left-panel {
+  flex: 1;                        /* ocupa la mitad izquierda */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #1a1a1a, #0f0c29);
+  color: #00fff7;
+}
+
+.left-panel h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.left-panel p {
+  font-size: 20px;
+  color: #00ff55;
+  letter-spacing: 1px;
+}
+
+/* Panel derecho */
+.right-panel {
+  flex: 1;                        /* ocupa la mitad derecha */
+  display: flex;
+  justify-content: center;         /* centra horizontal */
+  align-items: center;             /* centra vertical */
+  background: #111;
+}
+
+/* Card login */
+.login-card {
+  width: 80%;                      /* adaptable al panel derecho */
+  max-width: 400px;                /* no crezca demasiado */
+  background: rgba(0,0,0,0.85);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 0 40px #00fff7, 0 0 80px #ff00ff;
+  color: #fff;
+  text-align: center;
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 20px #ff3300, 0 0 40px #5bdd1f; }
+  100% { box-shadow: 0 0 40px #00fff7, 0 0 80px #1900ff; }
+}
+
+h2 {
+  margin-bottom: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #00fff7;
+}
+
+label {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 14px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  margin-top: 6px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #00fff7;
+  box-shadow: 0 0 10px #00fff7;
+  outline: none;
+}
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  flex: 1;
+  padding: 10px 16px;
+  margin-right: 8px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(45deg, #00fff7, #ff00ff);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:last-child {
+  margin-right: 0;
+  background: #555;
+  color: #fff;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #ff3860;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.info {
+  color: #00fff7;
+  margin-top: 12px;
+}
+
+.hint {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+

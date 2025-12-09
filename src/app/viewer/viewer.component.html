@@ -1,0 +1,58 @@
+<!-- Header con logo y menú -->
+<header class="app-header">
+  <div class="logo">
+    <img src="assets/logoEfact.png" alt="Logo">
+    <span></span>
+  </div>
+  <nav class="nav-menu">
+    <a href="#">Crear Comprobante</a>
+    <a href="#">Comprobantes Enviados</a>
+    <a href="#">Comprobantes Recibidos</a>
+    <a href="#">Reportes Items</a>
+    <a href="#">Cobranzas</a>
+    <a href="#">Otros</a>
+    <a href="#">Salir</a>
+  </nav>
+</header>
+
+<!-- Contenedor principal -->
+<div class="inicio-page">
+  <div class="inicio-card">
+
+    <!-- PRIMERA FILA: TÍTULO + BOTONES IZQUIERDA + BOTONES DERECHA -->
+    <div class="header-row">
+
+      <!-- BOTONES A LA IZQUIERDA -->
+      <div class="left-buttons">
+        <button class="big-left-btn" (click)="mostrarDocumento()">Documento</button>
+
+        <button class="big-left-btn">CREAR</button>
+        <button class="big-left-btn">CONVERTIR A FACTURA NEGOCIABLE</button>
+      </div>
+
+      <h2>Descargar: </h2>
+
+      <!-- BOTONES DERECHA -->
+      <div class="viewer-actions">
+  <button (click)="verXML()" class="small-btn xml-btn">XML</button>
+  <button (click)="verPDF()" class="small-btn pdf-btn">PDF</button>
+  <button (click)="descargarCDR()" class="small-btn cdr-btn">CDR</button>
+</div>
+
+
+    </div>
+
+    <div *ngIf="loading" class="info">Cargando...</div>
+
+    <pre *ngIf="xmlContent" class="xml-content">{{ xmlContent }}</pre>
+
+    <div *ngIf="pdfUrl" class="pdf-container">
+  <iframe
+    [src]="pdfUrl"
+    width="100%"
+    height="800px"
+    style="border: none;"
+  ></iframe>
+</div>
+  </div>
+</div>
