@@ -4,7 +4,7 @@ Este proyecto lo realice usando [Angular CLI](https://github.com/angular/angular
 
 ## Servidor de desarrollo
 
-Para iniciar abrir el proyecto, ejecuta:
+Para correr el proyecto, ejecuta:
 
 ```bash
 npm install
